@@ -136,7 +136,7 @@ class MainActivity : AppCompatActivity() {
 
         dog.move()
 
-        val human = Human("さんこん" , 38, "体操")
+        val human = Human("さんこん" , 38, "けんだま")
         human.say()
         human.think()
 
