@@ -140,6 +140,56 @@ class MainActivity : AppCompatActivity() {
         human.say()
         human.think()
 
+        val human2 = Human("ガイル",45,"フラフープ")
+        human2.say()
+        human2.think()
+
+
+        val str1 = "Hello"
+        val str2 = "World"
+        val str3 = "Hello"
+
+        val length = str3.length
+        Log.d(MY_TAG, length.toString())
+
+        val str4 = "100"
+        val num4 = str4.toInt()
+        Log.d(MY_TAG, num4.toString())
+
+        if (str1.equals(str2)) {
+            Log.d(MY_TAG, "str1とstr2は一緒です")
+        } else {
+            Log.d(MY_TAG, "str1とstr2は異なります")
+        }
+
+        if (str1.equals(str3)) {
+            Log.d(MY_TAG, "str1とstr3は一緒です")
+        } else {
+            Log.d(MY_TAG, "str1とstr3は異なります")
+        }
+
+        val i = 100
+        val str = i.toString() + " * 100 = ${i * 100}"
+        Log.d(MY_TAG, str)
+
+        val set1 = setOf(1,2,3,3)
+        val set2 = setOf(3,2,1)
+        Log.d(MY_TAG, (set1==set2).toString())
+
+        var str5: String? = null
+        if(str5?.length == null){
+            Log.d(MY_TAG, "str?.lengthの結果はnull")
+        } else {
+            Log.d(MY_TAG, "str?.lengthの結果は" + str5.length)
+        }
+
+        val items = arrayListOf<String?>("こんにちは！", null, "こんばんわ", null)
+        for(item in items){
+            item?.let {
+                Log.d(MY_TAG, "キラメキさん、$item")
+            }
+        }
+
     }
 }
 
